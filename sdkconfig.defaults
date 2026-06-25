@@ -1,0 +1,6 @@
+# Let esp_flash write the protected 0x1000 / 0x8000 regions (the whole point).
+CONFIG_SPI_FLASH_DANGEROUS_WRITE_ALLOWED=y
+# 16MB-aware so the migrator can read/verify the staged app @0x650000.
+CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=8192
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y

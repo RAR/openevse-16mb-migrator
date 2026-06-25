@@ -1,0 +1,8 @@
+# PlatformIO / ESP-IDF build output
+.pio/
+sdkconfig.esp32dev
+
+# Embedded 16MB bootloader + partition table. NOT committed: regenerate from your
+# own openevse_wifi_v1_16mb build ->  python3 scripts/gen_embeds.py <build-dir>
+src/openevse_bl.h
+src/openevse_pt.h
