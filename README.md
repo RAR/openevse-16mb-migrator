@@ -76,3 +76,10 @@ esptool --chip esp32 -p <PORT> write_flash --flash_size detect \
   bootloader/PT/app, stages them (app → `0x650000`, in the free upper flash a 4 MB
   layout doesn't reach), OTAs this migrator into a slot, and reboots into it —
   reusing PR #1136's existing download/verify/stage pipeline.
+
+## License
+
+GPL-3.0-or-later — Copyright (C) 2026 Andrew Rankin. See [`LICENSE`](LICENSE).
+
+The migrator embeds the OpenEVSE bootloader + partition table at build time, and
+OpenEVSE is GPLv3; GPLv3 keeps the combined work's terms consistent.
